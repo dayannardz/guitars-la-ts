@@ -2,7 +2,8 @@ import Header from "./components/Header";
 import Guitar from "./components/Guitar";
 import { useCart } from "./hooks/useCart";
 import { useState } from "react";
-//imports
+
+
 function App() {
 
   const { 
@@ -17,9 +18,8 @@ function App() {
   isEmpty
 } = useCart();
 
-//Predice el tipo de dato con el useState el isActivity sera int 
+//Predice el tipo de dato con el useState y el isActivity sera int 
 //const [isActivity, setActivity] = useState<Number>(30);
-
 
   return (
     <>

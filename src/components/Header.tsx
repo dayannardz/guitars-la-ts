@@ -3,11 +3,8 @@ import { useMemo } from "react";
 //imports
 
 
-export default function Header({ cart,total,increaseQuantity, decreaseQuantity, removeFromCart, emptyCart,isEmpty }:CartProps) 
-{
-
+export default function Header({ cart, total, increaseQuantity, decreaseQuantity, removeFromCart, emptyCart, isEmpty }: CartProps) {
   //toda la logica de la aplicacion va aqui
-  //useMemo guarda en cache
 
   //en return toda estructura
   return (
@@ -47,9 +44,9 @@ export default function Header({ cart,total,increaseQuantity, decreaseQuantity, 
                           <th></th>
                         </tr>
                       </thead>
-                    <tbody>
+                      <tbody>
                         {cart.map((guitar) => (
-                            
+
                           <tr key={guitar.id}>
                             <td>
                               <img
@@ -61,14 +58,14 @@ export default function Header({ cart,total,increaseQuantity, decreaseQuantity, 
                             <td>{guitar.name}</td>
                             <td className="fw-bold">${guitar.price}</td>
                             <td className="flex align-items-start gap-4">
-                              <button type="button" className="btn btn-dark"  onClick={() => decreaseQuantity(guitar.id)}
->
+                              <button type="button" className="btn btn-dark" onClick={() => decreaseQuantity(guitar.id)}
+                              >
                                 -
                               </button>
                               {guitar.quantity}
                               <button type="button" className="btn btn-dark" onClick={() => increaseQuantity(guitar.id)} >
                                 +
-                                
+
                               </button>
                             </td>
                             <td>
@@ -98,5 +95,5 @@ export default function Header({ cart,total,increaseQuantity, decreaseQuantity, 
     </header>
   );
 
-  // mandar la logica de header  al hook 
+  // mandar logica de header al hook 
 }

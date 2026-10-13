@@ -16,11 +16,7 @@ export const useCart = () => {
 
     const validCart = (true);
 
-
-
     const isEmpty = useMemo(() => cart.length === 0, [cart]);
-
-
 
 
     useEffect(() => {
@@ -32,7 +28,6 @@ export const useCart = () => {
         //console.log(guitarExists);
         //setCart((prevCart) => [...cart, { ...item }]);
 
-        //console.log(cart);
         if (guitarExists >= 0) {
             const updatedCart = [...cart];
             updatedCart[guitarExists].quantity += 1;
@@ -97,35 +92,10 @@ export const useCart = () => {
         setCart([]);
     }
 
-
-
-
-
     useEffect(() => {
         console.log(cart);
     }, [cart]);
 
-    /*
-    data.map((guitar) => {
-      console.log("guitarra encontrada");
-    });
-    */
-    //UseEffect
-    /*
-    useEffect(() => {
-      //Accion al cargar el componente
-      console.log("Componente listo");
-    }, []);
-    useEffect(() => {
-      //Accion al cambio de una vari
-      // able
-      console.log("Token cambio ");
-    }, [auth]);
-    setTimeout(() => {
-      setAuth(true);
-      setTotal(1000);
-    }, 3000);
-  */
     return {
         cart,
         setCart,
