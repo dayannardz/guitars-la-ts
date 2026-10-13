@@ -56,7 +56,7 @@ La aplicación facilita la visualización y selección de guitarras dentro de un
 
 ## 1.5 Repositorio y despliegue
 
-- **Repositorio de GitHub:** https://github.com/dayannardz/GuitarsLA-ts
+- **Repositorio de GitHub:** https://github.com/dayannardz/guitars-la-ts.git
 - **Despliegue en producción:** No se cuenta con una URL de producción confirmada.
 
 ---
